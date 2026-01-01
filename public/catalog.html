@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agents Catalog - Browse & Purchase</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🤖 AI Agents Marketplace</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="docs.html">Documentation</a></li>
+                <li><a href="login.html" id="authLink">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="catalog-header">
+        <div class="container">
+            <h1>AI Agents Catalog</h1>
+            <p>Browse our collection of 500+ AI agents across multiple frameworks and industries</p>
+        </div>
+    </section>
+
+    <section class="catalog-content">
+        <div class="container">
+            <div class="catalog-filters">
+                <div class="filter-group">
+                    <label>Framework:</label>
+                    <select id="frameworkFilter" class="filter-select">
+                        <option value="all">All Frameworks</option>
+                        <option value="crewai">CrewAI</option>
+                        <option value="autogen">AutoGen</option>
+                        <option value="langgraph">LangGraph</option>
+                        <option value="agno">Agno</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Industry:</label>
+                    <select id="industryFilter" class="filter-select">
+                        <option value="all">All Industries</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="finance">Finance</option>
+                        <option value="education">Education</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="customer-service">Customer Service</option>
+                        <option value="development">Software Development</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search agents...">
+                </div>
+            </div>
+
+            <div id="catalogGrid" class="catalog-grid">
+                <!-- Agents will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Agents Marketplace</h4>
+                    <p>Empowering businesses with cutting-edge AI automation solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="catalog.html">Agent Catalog</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="docs.html#api">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="docs.html#guides">User Guides</a></li>
+                        <li><a href="mailto:support@aiagents.example">Contact Support</a></li>
+                        <li><a href="https://github.com/mlnaiautomationdesign-dot/500-ai-agents-projects-2">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Agents Marketplace. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

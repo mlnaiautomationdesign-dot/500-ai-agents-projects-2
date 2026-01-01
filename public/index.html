@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agents Marketplace - Your Gateway to AI Automation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🤖 AI Agents Marketplace</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="docs.html">Documentation</a></li>
+                <li><a href="login.html" id="authLink">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform Your Business with AI Agents</h1>
+                <p class="hero-subtitle">Access 500+ pre-built AI agents for every industry. Deploy, customize, and scale your AI solutions instantly.</p>
+                <div class="hero-buttons">
+                    <a href="catalog.html" class="btn btn-primary">Explore Catalog</a>
+                    <a href="#demo" class="btn btn-secondary">Try Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Our Platform?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>500+ AI Agents</h3>
+                    <p>Pre-built agents for healthcare, finance, education, e-commerce, and 20+ other industries</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Deployment</h3>
+                    <p>Deploy AI agents in minutes with our simple API integration and comprehensive documentation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Compliant</h3>
+                    <p>Enterprise-grade security with JWT authentication and encrypted payment processing via Stripe</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Customizable</h3>
+                    <p>Adapt agents to your specific needs with flexible configuration options and custom workflows</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frameworks">
+        <div class="container">
+            <h2>Built on Industry-Leading Frameworks</h2>
+            <div class="frameworks-grid">
+                <div class="framework-card">
+                    <h3>CrewAI</h3>
+                    <p>Multi-agent collaboration with 50+ use cases including email automation, recruitment workflows, and content generation</p>
+                </div>
+                <div class="framework-card">
+                    <h3>AutoGen</h3>
+                    <p>Advanced code generation, debugging, and multi-agent systems for complex task solving</p>
+                </div>
+                <div class="framework-card">
+                    <h3>LangGraph</h3>
+                    <p>Graph-based workflows for adaptive RAG, customer support, and hierarchical agent teams</p>
+                </div>
+                <div class="framework-card">
+                    <h3>Agno</h3>
+                    <p>Specialized agents for research, finance, legal analysis, and content creation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <h2>Try a Live Demo</h2>
+            <p class="demo-subtitle">Experience our AI agents in action. Select an agent and see real-time results.</p>
+            
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <label for="demoAgent">Select Agent:</label>
+                    <select id="demoAgent" class="demo-select">
+                        <option value="content-generator">Content Generator</option>
+                        <option value="code-assistant">Code Assistant</option>
+                        <option value="customer-support">Customer Support Bot</option>
+                        <option value="data-analyzer">Data Analyzer</option>
+                    </select>
+                    
+                    <label for="demoInput">Your Query:</label>
+                    <textarea id="demoInput" class="demo-textarea" placeholder="Enter your query here..." rows="4"></textarea>
+                    
+                    <button id="runDemo" class="btn btn-primary">Run Demo</button>
+                </div>
+                
+                <div class="demo-output">
+                    <h3>Output:</h3>
+                    <div id="demoResult" class="demo-result">
+                        <p class="demo-placeholder">Select an agent and click "Run Demo" to see results...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$29<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>✓ Access to 50 AI agents</li>
+                        <li>✓ 1,000 API calls/month</li>
+                        <li>✓ Email support</li>
+                        <li>✓ Basic documentation</li>
+                    </ul>
+                    <a href="catalog.html" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="price">$99<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>✓ Access to all 500+ agents</li>
+                        <li>✓ 10,000 API calls/month</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Advanced documentation</li>
+                        <li>✓ Custom integrations</li>
+                    </ul>
+                    <a href="catalog.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited agents</li>
+                        <li>✓ Unlimited API calls</li>
+                        <li>✓ 24/7 dedicated support</li>
+                        <li>✓ White-label solutions</li>
+                        <li>✓ On-premise deployment</li>
+                    </ul>
+                    <a href="mailto:sales@aiagents.example" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Agents Marketplace</h4>
+                    <p>Empowering businesses with cutting-edge AI automation solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="catalog.html">Agent Catalog</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="docs.html#api">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="docs.html#guides">User Guides</a></li>
+                        <li><a href="mailto:support@aiagents.example">Contact Support</a></li>
+                        <li><a href="https://github.com/mlnaiautomationdesign-dot/500-ai-agents-projects-2">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Agents Marketplace. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

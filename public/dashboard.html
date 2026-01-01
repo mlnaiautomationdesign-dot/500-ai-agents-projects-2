@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AI Agents Marketplace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🤖 AI Agents Marketplace</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="docs.html">Documentation</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="#" id="logoutLink">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard-section">
+        <div class="container">
+            <h1>My Dashboard</h1>
+            
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Purchased Agents</h3>
+                    <div class="stat-value" id="totalAgents">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>API Calls This Month</h3>
+                    <div class="stat-value" id="apiCalls">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Current Plan</h3>
+                    <div class="stat-value" id="currentPlan">Free</div>
+                </div>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="dashboard-section-card">
+                    <h2>My Agents</h2>
+                    <div id="myAgents" class="agents-list">
+                        <p class="empty-state">No agents purchased yet. <a href="catalog.html">Browse catalog</a></p>
+                    </div>
+                </div>
+
+                <div class="dashboard-section-card">
+                    <h2>API Keys</h2>
+                    <div class="api-keys">
+                        <div class="api-key-item">
+                            <input type="text" id="apiKey" readonly value="Loading...">
+                            <button class="btn btn-secondary" id="copyApiKey">Copy</button>
+                            <button class="btn btn-outline" id="regenerateKey">Regenerate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-section-card">
+                    <h2>Recent Activity</h2>
+                    <div id="recentActivity" class="activity-list">
+                        <p class="empty-state">No recent activity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Agents Marketplace</h4>
+                    <p>Empowering businesses with cutting-edge AI automation solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="catalog.html">Agent Catalog</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="docs.html#api">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="docs.html#guides">User Guides</a></li>
+                        <li><a href="mailto:support@aiagents.example">Contact Support</a></li>
+                        <li><a href="https://github.com/mlnaiautomationdesign-dot/500-ai-agents-projects-2">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Agents Marketplace. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
