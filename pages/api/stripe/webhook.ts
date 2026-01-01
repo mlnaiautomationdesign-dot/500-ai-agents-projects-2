@@ -5,7 +5,7 @@ import { buffer } from 'micro';
 // TODO: Set this in your environment variables (.env.local)
 // Get your webhook secret from: https://dashboard.stripe.com/test/webhooks
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-  apiVersion: '2025-01-27.acacia',
+  apiVersion: '2025-12-15.clover',
 });
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET || '';
