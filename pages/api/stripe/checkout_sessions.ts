@@ -4,7 +4,7 @@ import Stripe from 'stripe';
 // TODO: Add your Stripe secret key to .env.local
 // Get this from: https://dashboard.stripe.com/test/apikeys
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-  apiVersion: '2024-11-20.acacia',
+  apiVersion: '2023-10-16',
 });
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
