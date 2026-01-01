@@ -6,10 +6,161 @@
 
 A curated collection of AI agent use cases across industries, showcasing practical applications and linking to open-source projects for implementation. Explore how AI agents are transforming industries like healthcare, finance, education, and more! 🤖✨
 
+**✨ NEW: Now available as a modern SaaS platform!** Browse, try demos, and purchase AI agents directly from our marketplace.
+
+---
+
+## 🚀 SaaS Platform Quick Start
+
+This repository now includes a complete Next.js-based SaaS platform for selling AI agents!
+
+### 🎯 Features
+
+- 🛍️ **Modern Marketplace**: Browse and purchase AI agents with an intuitive interface
+- 💳 **Stripe Integration**: Secure payment processing with subscription management
+- 🔐 **Firebase Authentication**: User accounts and access control
+- 🎮 **Live Demos**: Try agents before you buy with embedded Gradio/Streamlit demos
+- 📱 **Responsive Design**: Beautiful UI with Tailwind CSS
+- 🔧 **TypeScript**: Fully typed for better developer experience
+- ⚡ **Fast & Scalable**: Built on Next.js for optimal performance
+
+### 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/mlnaiautomationdesign-dot/500-ai-agents-projects-2.git
+cd 500-ai-agents-projects-2
+
+# Install dependencies
+npm install
+
+# Copy environment variables template
+cp .env.example .env.local
+
+# Configure your environment variables (see below)
+# Edit .env.local with your API keys
+
+# Run development server
+npm run dev
+```
+
+Visit `http://localhost:3000` to see the marketplace!
+
+### 🔑 Environment Variables Setup
+
+You need to configure the following services:
+
+#### 1. **Stripe** (Payment Processing)
+- Sign up at [https://stripe.com](https://stripe.com)
+- Get test API keys from Dashboard → Developers → API keys
+- Add to `.env.local`:
+  ```env
+  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+  STRIPE_SECRET_KEY=sk_test_...
+  ```
+- Create webhook endpoint:
+  - Dashboard → Developers → Webhooks
+  - Point to: `https://your-domain.com/api/stripe/webhook`
+  - Select events: `checkout.session.completed`, `customer.subscription.*`
+  - Copy webhook secret:
+    ```env
+    STRIPE_WEBHOOK_SECRET=whsec_...
+    ```
+
+#### 2. **Firebase** (Authentication)
+- Create project at [https://console.firebase.google.com](https://console.firebase.google.com)
+- Enable Authentication → Email/Password
+- Get config from Project Settings → Your apps
+- Add to `.env.local`:
+  ```env
+  NEXT_PUBLIC_FIREBASE_CONFIG='{"apiKey":"...","authDomain":"...","projectId":"...",...}'
+  ```
+
+See `.env.example` for complete configuration guide.
+
+### 🚀 Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+1. Push your code to GitHub
+2. Import repository in Vercel
+3. Add environment variables in Vercel dashboard:
+   - `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`
+   - `STRIPE_SECRET_KEY`
+   - `STRIPE_WEBHOOK_SECRET`
+   - `NEXT_PUBLIC_FIREBASE_CONFIG`
+4. Deploy!
+
+**Important**: After deployment, update your Stripe webhook URL to point to your Vercel domain.
+
+### 📚 Documentation
+
+- **Platform Setup**: See above for environment configuration
+- **Agent Documentation**: See `/docs/README.md` for adding agent docs
+- **Demo Hosting**: See `/demo/README.md` for hosting demos on Gradio/Streamlit/HuggingFace
+- **API Reference**: API routes are in `/pages/api/`
+
+### 🛠️ Development Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run ESLint
+npm run format   # Format code with Prettier
+```
+
+### 🏗️ Project Structure
+
+```
+├── pages/               # Next.js pages
+│   ├── index.tsx       # Homepage with agent catalog
+│   ├── demo/           # Demo pages
+│   ├── login.tsx       # Login page
+│   ├── register.tsx    # Registration page
+│   └── api/            # API routes
+│       ├── stripe/     # Stripe checkout & webhooks
+│       ├── auth/       # Authentication endpoints
+│       └── user/       # User data endpoints
+├── components/         # React components
+│   └── Auth/          # Authentication components
+├── lib/               # Utilities and configurations
+│   ├── firebase.ts    # Firebase setup
+│   └── useAuth.ts     # Auth hook & HOC
+├── styles/            # Global styles
+├── docs/              # Agent documentation
+├── demo/              # Demo hosting guides
+└── public/            # Static assets
+```
+
+### 🔒 Security Notes
+
+- Never commit `.env.local` or real API keys
+- Use test mode Stripe keys during development
+- Enable Stripe webhook signature verification in production
+- Set up proper Firebase security rules
+- Implement rate limiting for public endpoints
+- Use environment variables for all secrets
+
+### 🤝 Contributing to the Platform
+
+We welcome contributions! Here's how:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
 ## 📋 Table of Contents
 
+- [SaaS Platform Quick Start](#-saas-platform-quick-start)
 - [Introduction](#introduction)
 - [Industry Usecase](#-industry-usecase-mindmap)
 - [Use Case Table](#use-case-table)
