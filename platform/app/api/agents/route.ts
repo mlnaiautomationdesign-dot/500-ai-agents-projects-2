@@ -8,7 +8,7 @@ export async function GET(request: Request) {
     const framework = searchParams.get('framework')
     const featured = searchParams.get('featured')
 
-    const where: any = {}
+    const where: Record<string, unknown> = {}
     
     if (category) where.category = category
     if (framework) where.framework = framework

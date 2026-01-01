@@ -104,12 +104,12 @@ export default function DocsPage() {
               <section id="purchasing">
                 <h2 className="text-2xl font-bold mb-4">Purchasing Agents</h2>
                 <p className="text-gray-700 mb-4">
-                  We use Stripe for secure payment processing. Here's how purchasing works:
+                  We use Stripe for secure payment processing. Here&apos;s how purchasing works:
                 </p>
                 <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-4">
                   <li>Sign in to your account</li>
-                  <li>Select an agent and click "Purchase"</li>
-                  <li>You'll be redirected to Stripe's secure checkout</li>
+                  <li>Select an agent and click &quot;Purchase&quot;</li>
+                  <li>You&apos;ll be redirected to Stripe&apos;s secure checkout</li>
                   <li>Complete payment with your credit card</li>
                   <li>Get instant access to the agent code and documentation</li>
                 </ol>
@@ -124,7 +124,7 @@ export default function DocsPage() {
               <section id="integration">
                 <h2 className="text-2xl font-bold mb-4">Integration Guide</h2>
                 <p className="text-gray-700 mb-4">
-                  After purchasing an agent, you'll receive:
+                  After purchasing an agent, you&apos;ll receive:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
                   <li>Complete source code with comments</li>
@@ -148,7 +148,7 @@ export default function DocsPage() {
                   <div className="border-l-4 border-green-600 pl-4">
                     <h3 className="font-semibold mb-2">AutoGen</h3>
                     <p className="text-gray-600">
-                      Microsoft's framework for building multi-agent conversational systems with 
+                      Microsoft&apos;s framework for building multi-agent conversational systems with 
                       code generation and execution capabilities.
                     </p>
                   </div>
@@ -174,14 +174,14 @@ export default function DocsPage() {
                   <div>
                     <h3 className="font-semibold mb-2">How do I get support?</h3>
                     <p className="text-gray-600">
-                      For technical issues, refer to the individual agent's GitHub repository. 
+                      For technical issues, refer to the individual agent&apos;s GitHub repository. 
                       For platform-related questions, contact us at support@aiagents.com.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Can I request refunds?</h3>
                     <p className="text-gray-600">
-                      We offer refunds within 30 days of purchase if the agent doesn't meet the 
+                      We offer refunds within 30 days of purchase if the agent doesn&apos;t meet the 
                       described functionality.
                     </p>
                   </div>
