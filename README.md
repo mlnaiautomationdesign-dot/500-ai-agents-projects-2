@@ -6,10 +6,13 @@
 
 A curated collection of AI agent use cases across industries, showcasing practical applications and linking to open-source projects for implementation. Explore how AI agents are transforming industries like healthcare, finance, education, and more! 🤖✨
 
+> **🚀 NEW: SaaS Platform Available!** - Check out our [modern SaaS platform](./platform) for discovering, purchasing, and deploying AI agents with Stripe integration, user authentication, and comprehensive documentation.
+
 ---
 
 ## 📋 Table of Contents
 
+- [SaaS Platform](#-saas-platform)
 - [Introduction](#introduction)
 - [Industry Usecase](#-industry-usecase-mindmap)
 - [Use Case Table](#use-case-table)
@@ -23,12 +26,43 @@ A curated collection of AI agent use cases across industries, showcasing practic
 
 ---
 
+## 🚀 SaaS Platform
+
+We've built a modern SaaS platform to make it easy to discover, purchase, and deploy AI agents. The platform features:
+
+- **🤖 Extensive Catalog** - Browse 500+ curated AI agents across multiple frameworks
+- **🔐 User Authentication** - Secure registration and login with NextAuth.js
+- **💳 Stripe Integration** - Safe and reliable payment processing
+- **📚 Comprehensive Documentation** - Detailed guides for users and buyers
+- **🎨 Modern UI** - Beautiful, responsive interface built with Next.js and Tailwind CSS
+- **🔍 Advanced Filtering** - Search agents by framework, industry, and category
+
+### Quick Start
+
+```bash
+cd platform
+npm install
+cp .env.example .env
+# Edit .env with your configuration
+npx prisma generate
+npx prisma db push
+node scripts/seed.js
+npm run dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to see the platform in action.
+
+📖 **[Full Platform Documentation →](./platform/README.md)**
+
+---
+
 ## 🧠 Introduction
 
 Artificial Intelligence (AI) agents are revolutionizing the way industries operate. From personalized learning to financial trading bots, AI agents bring efficiency, innovation, and scalability. This repository provides:
 
 - A categorized list of industries where AI agents are making an impact.
 - Detailed use cases with links to open-source projects for implementation.
+- A modern SaaS platform for deploying these agents in production.
 
 Whether you're a developer, researcher, or business enthusiast, this repository is your go-to resource for AI agent inspiration and learning.
 

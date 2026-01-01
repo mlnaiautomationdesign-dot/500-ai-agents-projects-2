@@ -1,0 +1,70 @@
+// Database schema for AI Agents SaaS Platform
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  password      String
+  role          String    @default("user")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  purchases     Purchase[]
+  sessions      Session[]
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  userId       String
+  expiresAt    DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt    DateTime @default(now())
+}
+
+model Agent {
+  id            String    @id @default(cuid())
+  name          String
+  description   String
+  category      String
+  framework     String
+  githubUrl     String
+  industry      String
+  price         Float     @default(0)
+  featured      Boolean   @default(false)
+  demoUrl       String?
+  tags          String    // JSON array as string
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  purchases     Purchase[]
+}
+
+model Purchase {
+  id            String    @id @default(cuid())
+  userId        String
+  agentId       String
+  amount        Float
+  stripePaymentId String?
+  status        String    @default("pending")
+  createdAt     DateTime  @default(now())
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  agent         Agent     @relation(fields: [agentId], references: [id], onDelete: Cascade)
+}
+
+model Documentation {
+  id            String    @id @default(cuid())
+  title         String
+  content       String
+  category      String
+  slug          String    @unique
+  order         Int       @default(0)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
