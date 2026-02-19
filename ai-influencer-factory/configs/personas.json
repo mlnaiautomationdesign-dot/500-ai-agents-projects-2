@@ -1,0 +1,34 @@
+{
+  "personas": [
+    {
+      "name": "Aria",
+      "niche": "wellness and mindfulness",
+      "voice_style": "calm, nurturing, and wise",
+      "audience_age_range": [22, 40],
+      "brand_tone": "empathetic and empowering",
+      "language": "en",
+      "avatar_style": "photorealistic",
+      "tags": ["wellness", "mindfulness", "selfcare", "mentalhealth"]
+    },
+    {
+      "name": "Zane",
+      "niche": "tech and AI trends",
+      "voice_style": "energetic, direct, and knowledgeable",
+      "audience_age_range": [18, 35],
+      "brand_tone": "authoritative yet approachable",
+      "language": "en",
+      "avatar_style": "photorealistic",
+      "tags": ["tech", "AI", "futuretech", "innovation", "startups"]
+    },
+    {
+      "name": "Luna",
+      "niche": "sustainable living and eco lifestyle",
+      "voice_style": "passionate, grounded, and inspiring",
+      "audience_age_range": [20, 45],
+      "brand_tone": "optimistic and action-oriented",
+      "language": "en",
+      "avatar_style": "illustrated",
+      "tags": ["sustainability", "ecofriendly", "greenliving", "zerowaste"]
+    }
+  ]
+}
